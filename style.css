@@ -165,7 +165,11 @@ a {
   gap: 50px;
 }
 #about img {
-  width: 200px;
+  width: 299px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
 #textabout {
   width: 40rem;
@@ -318,3 +322,4 @@ a {
     display: none; /* Hide on mobile */
   }
 }
+
