@@ -94,3 +94,22 @@ document.querySelectorAll(".elem").forEach(function (elem) {
     });
   });
 });
+// Show current year
+  document.getElementById("year").textContent = new Date().getFullYear() + " ©";
+
+  // Function to update time
+  function updateTime() {
+    let now = new Date();
+    let options = {
+      hour: "numeric",
+      minute: "numeric",
+      second: "numeric",
+      hour12: true,
+      timeZoneName: "short" // shows timezone (e.g., EST)
+    };
+    document.getElementById("time").textContent = now.toLocaleTimeString("en-US", options);
+  }
+
+  // Update every second
+  updateTime();
+  setInterval(updateTime, 1000);
